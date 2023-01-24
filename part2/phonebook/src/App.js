@@ -51,7 +51,7 @@ const App = () => {
     phoneBookService
       .create(nameObject)
       .then(response => {
-        setPersons(persons.concat(response))
+        setPersons(response)
         setNewName('')
         setNewNumber('')
         setNotification(`${nameObject.name} was added`)
